@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}Guess-the-number game{% endblock title %}
+
+{% block content %}
+
+<h2>The rules are simple:</h2>
+<p>There is a secret number between 1 and 30, your job is to guess it. Give it a try!</p>
+
+<form method="post" action="/result">
+    <input type="text" name="guess" placeholder="Enter your guess">
+    <br>
+
+    <button type="submit">Submit</button>
+</form>
+
+
+
+{% endblock content %}
